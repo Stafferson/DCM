@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".questions">
+
+    <Button
+        android:id="@+id/button_activityquestions2_anxiety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="117dp"
+        android:text="Anxiety"
+        android:onClick="onClick_questionactivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_activityquestions2_happiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Happiness"
+        android:onClick="onClick_questionactivity"
+        app:layout_constraintStart_toStartOf="@+id/button_activityquestions2_interest"
+        app:layout_constraintTop_toBottomOf="@+id/button_activityquestions2_interest" />
+
+    <Button
+        android:id="@+id/button_activityquestions2_interest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="58dp"
+        android:text="Interest"
+        android:onClick="onClick_questionactivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_activityquestions2_stress" />
+
+    <Button
+        android:id="@+id/button_activityquestions2_anger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="Anger"
+        android:onClick="onClick_questionactivity"
+        app:layout_constraintBottom_toTopOf="@+id/button_activityquestions2_stress"
+        app:layout_constraintEnd_toEndOf="@+id/button_activityquestions2_stress" />
+
+    <Button
+        android:id="@+id/button_activityquestions2_stress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="265dp"
+        android:text="Stress"
+        android:onClick="onClick_questionactivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_activityquestions2_depression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="49dp"
+        android:text="Depression"
+        android:onClick="onClick_questionactivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_activityquestions2_happiness"
+        app:layout_constraintTop_toBottomOf="@+id/button_activityquestions2_fear" />
+
+    <Button
+        android:id="@+id/button_activityquestions2_fear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="49dp"
+        android:text="Fear"
+        android:onClick="onClick_questionactivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_activityquestions2_irritation" />
+
+    <Button
+        android:id="@+id/button_activityquestions2_irritation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="49dp"
+        android:text="Irritation"
+        android:onClick="onClick_questionactivity"
+        app:layout_constraintBottom_toBottomOf="@+id/button_activityquestions2_interest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_activityquestions2_interest" />
+
+    <Button
+        android:id="@+id/button_activityquestions2_confidence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="49dp"
+        android:text="Confidence"
+        android:onClick="onClick_questionactivity"
+        app:layout_constraintBottom_toBottomOf="@+id/button_activityquestions2_stress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_activityquestions2_happiness"
+        app:layout_constraintTop_toTopOf="@+id/button_activityquestions2_stress" />
+
+    <Button
+        android:id="@+id/button_activityquestions2_sad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="37dp"
+        android:text="Sad"
+        android:onClick="onClick_questionactivity"
+        app:layout_constraintBottom_toTopOf="@+id/button_activityquestions2_confidence"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_question2activity_question"
+        android:layout_width="217dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="69dp"
+        android:text="Choose the 3 feelings that you experienced most often today."
+        app:layout_constraintBottom_toTopOf="@+id/button_activityquestions2_sad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
